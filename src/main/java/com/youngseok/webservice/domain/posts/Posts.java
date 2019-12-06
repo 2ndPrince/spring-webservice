@@ -1,4 +1,4 @@
-package com.youngseok.webservice.domain;
+package com.youngseok.webservice.domain.posts;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

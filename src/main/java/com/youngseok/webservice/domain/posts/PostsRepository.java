@@ -1,4 +1,4 @@
-package com.youngseok.webservice.domain;
+package com.youngseok.webservice.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

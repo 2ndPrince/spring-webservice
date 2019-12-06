@@ -11,6 +11,10 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import com.youngseok.webservice.domain.posts.Posts;
+import com.youngseok.webservice.domain.posts.PostsRepository;
+
 import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
