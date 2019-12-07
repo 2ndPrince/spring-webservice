@@ -6,20 +6,20 @@ import static org.hamcrest.CoreMatchers.is;
 import java.util.List;
 
 import org.junit.After;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import static org.junit.Assert.assertThat;
 
 import com.youngseok.webservice.domain.posts.Posts;
 import com.youngseok.webservice.domain.posts.PostsRepository;
 
-import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class PostsRepositoryTest {
+public class PostsRepositoryTest {
 
 	@Autowired
 	PostsRepository postsRepository;
