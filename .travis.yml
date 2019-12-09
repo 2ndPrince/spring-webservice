@@ -18,4 +18,17 @@ script: "./gradlew clean build"
 notifications:
   email:
     recipients:
-      - astonisher88@gmail.com 
+      - astonisher88@gmail.com
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    bucket: springboot-webservice-deploy-youngseok # 6-3-3에서 생성한 S3 버킷
+    region: us-east-2
+    skip_cleanup: true
+    acl: public_read
+    wait-until-deployed: true
+    on:
+      repo: 2ndPrince/springboot-webservice #Github 주소
+      branch: master
